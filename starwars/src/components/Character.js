@@ -5,7 +5,7 @@ import './StarWars.css';
 const Character = props => {
     return (
         <div className='CharacterCard'>
-            <div classNmae='name'>
+            <div className='name'>
                 <h1>
                     {props.characterOnProps.name}
                 </h1>
