@@ -1,5 +1,4 @@
 import React from 'react';
-import Planet from './Planet'
 import './StarWars.css';
 
 const Character = props => {
