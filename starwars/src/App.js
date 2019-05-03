@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import CharacterList from '.CharacterList';
+import CharacterList from './components/CharacterList';
+import PlanetList from './components/PlanetList';
+
+
+
 class App extends Component {
   constructor() {
     super();
@@ -16,7 +20,7 @@ class App extends Component {
   }
 
   getPlanets = URL => {
-    fectch(URL)
+    fetch(URL)
       .then(res => {
         return res.json();
       })
@@ -48,8 +52,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CharacterList stawarsChars={this.state.starwarsChars} />
-
+        <CharacterList starwarsChars={this.state.starwarsChars} />
+        <PlanetList planet={this.state.planets}  />
       </div>
     );
   }

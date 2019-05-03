@@ -2,7 +2,7 @@ import React from 'react';
 import Planet from './Planet'
 import './StarWars.css';
 
-const Charater = props => {
+const Character = props => {
     return (
         <div className='CharacterCard'>
             <div classNmae='name'>

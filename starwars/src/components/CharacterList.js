@@ -2,7 +2,7 @@ import React from 'react';
 import Character from './Character'
 
 const CharacterList = props => {
-    console.log(props.starwarsChars)
+    // console.log(props.starwarsChars)
     return(
         <div>
             {props.starwarsChars.map( characterInMap => (
