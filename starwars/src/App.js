@@ -1,17 +1,32 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import CharacterList from '.CharacterList';
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      planets:[]
     };
   }
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people/');
+    this.getPlanets('https://swapi.co/api/planets');
   }
+
+  getPlanets = URL => {
+    fectch(URL)
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        this.setState({planets: data.results});
+      })
+      .catch(err => {
+        throw new Error(err);
+      });
+  };
 
   getCharacters = URL => {
     // feel free to research what this code is doing.
@@ -33,6 +48,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharacterList stawarsChars={this.state.starwarsChars} />
+
       </div>
     );
   }
