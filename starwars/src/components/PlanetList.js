@@ -1,0 +1,17 @@
+import React from 'react';
+import Planet from './Planet'
+
+const PlanetList = props => {
+    console.log(props.planets)
+    return(
+        <div>
+            {props.planet.map( planetInMap => (
+                <Planet key={planetInMap.name}
+                planetOnProps={planetInMap}  />
+            ))};
+        </div>
+    )
+}
+
+
+export default PlanetList;

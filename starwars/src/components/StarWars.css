@@ -1,0 +1,42 @@
+.CharacterCard {
+    margin: 0 auto;
+    margin-bottom: 5%;
+    width: 70%;
+    border: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+    background: lime;
+    
+    
+
+
+}
+
+.name {
+    margin: 0 7%;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    color: linen;
+    text-shadow: 1px 4px black;
+    
+}
+
+.planetCard{
+    margin: 0 auto;
+    margin-bottom: 5%;
+    width: 70%;
+    border: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+    background:aqua;
+}
+
+.planet-name{
+    margin: 0 7%;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    color: rgb(252, 6, 6);
+    text-shadow: 1px 4px rgb(99, 5, 5);
+}
